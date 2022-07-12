@@ -1,0 +1,2389 @@
+{
+	"info": {
+		"_postman_id": "678dab49-83db-4741-8255-7f07d47a20f9",
+		"name": "eKatalogMobilnih",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15735887"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get all category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/category",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all category - successful",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/category",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "560"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"230-tLWh19FPfK1ckdjv3mGiKSav3Qg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 19:48:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"categoryId\": 1,\n        \"name\": \"izmenjenA KATEGORIJA\",\n        \"imagePath\": \"nestotamo/ePoskat2.png\"\n    },\n    {\n        \"categoryId\": 17,\n        \"name\": \"zczxv\",\n        \"imagePath\": \"0xvvvx\"\n    },\n    {\n        \"categoryId\": 18,\n        \"name\": \"aaaaaadodaato\",\n        \"imagePath\": \"nestotamo/ePoskat23.png\"\n    },\n    {\n        \"categoryId\": 21,\n        \"name\": \"dodata nova kategorija kao admin\",\n        \"imagePath\": \"nestotamo/novakatkaoadmin.png\"\n    },\n    {\n        \"categoryId\": 22,\n        \"name\": \"dodata nova kategorijaaaaaaaa kao admin\",\n        \"imagePath\": \"nestotamo/novakatkaaaaaaaaoadmin.png\"\n    },\n    {\n        \"categoryId\": 23,\n        \"name\": \"dodata nova kategorijaaaaaaaa kao admin1\",\n        \"imagePath\": \"nestotamo/novakatkaaaaaaaaoadmin1.png\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get by id category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/category/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get by id category - seccessful",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/category/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-JFE0CRMc/ENZQKWFydGRTPW9kBc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 19:49:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 1,\n    \"name\": \"izmenjenA KATEGORIJA\",\n    \"imagePath\": \"nestotamo/ePoskat2.png\"\n}"
+						},
+						{
+							"name": "Get by id category  - Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/category/124",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"124"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 19:50:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Not Found"
+						},
+						{
+							"name": "Get by id category - Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/category/-1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"-1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b-EFiDB1U+dmqzx9Mo2UjcZ1SJPO8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 19:51:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Bad Request"
+						}
+					]
+				},
+				{
+					"name": "Add new category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"dodata nova kategorija kao admin2\",\r\n    \"imagePath\": \"nestotamo/novakatkaoadmin2.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/category",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add new category - succcessful",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"dodata nova kategorijaaaaaaaa kao admin1\",\r\n    \"imagePath\": \"nestotamo/novakatkaaaaaaaaoadmin1.png\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/category",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-WvTXVJfjNABqRG67I0bpFQNu5wM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 18:57:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 23,\n    \"name\": \"dodata nova kategorijaaaaaaaa kao admin1\",\n    \"imagePath\": \"nestotamo/novakatkaaaaaaaaoadmin1.png\"\n}"
+						},
+						{
+							"name": "Add new category - must have required property 'imagePath'",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ePos kategorija23\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/category",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "161"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a1-EldtlDHv+h90x6C+JqH9jQv+miI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 19:55:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"instancePath\": \"\",\n        \"schemaPath\": \"#/required\",\n        \"keyword\": \"required\",\n        \"params\": {\n            \"missingProperty\": \"imagePath\"\n        },\n        \"message\": \"must have required property 'imagePath'\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Edit category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"izmenjenA KAT\",\r\n    \"imagePath\": \"nesto/eizmena1.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/category/17",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								"17"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit category -must match pattern \\\".(png|jpg)",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"izmenjenA KATEGORIJA\",\r\n    \"imagePath\": \"nestotamo/eizmena.jpeg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/category/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "179"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b3-RVtC0io0KKusPUb85vIPeyOEc50\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 22:03:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"instancePath\": \"/imagePath\",\n        \"schemaPath\": \"#/properties/imagePath/pattern\",\n        \"keyword\": \"pattern\",\n        \"params\": {\n            \"pattern\": \".(png|jpg)$\"\n        },\n        \"message\": \"must match pattern \\\".(png|jpg)$\\\"\"\n    }\n]"
+						},
+						{
+							"name": "Edit category - not found category id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"izmenjenA KATEGORIJA\",\r\n    \"imagePath\": \"nestotamo/eizmena.png\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/category/55",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"55"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 22:04:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Not Found"
+						},
+						{
+							"name": "Edit category - successful",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"izmenjenA KAT\",\r\n    \"imagePath\": \"nesto/eizmena1.png\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/category/17",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"17"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-w92OtnzWHgO19Db05che4liFfrU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 19:59:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 17,\n    \"name\": \"izmenjenA KAT\",\n    \"imagePath\": \"nesto/eizmena1.png\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/category/17",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"category",
+								"17"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete category - with en exist id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/category/20",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"20"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-3bGvgyUDYS+l5eYoH2RPZglCspw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jun 2022 20:55:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": 0,\n    \"errorMessage\": \"One record deleted. \"\n}"
+						},
+						{
+							"name": "Delete category - with a not-exist id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/category/34",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"category",
+										"34"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5d-rEcAeLHHZzwz3xXTABzbxX4ny9I\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jun 2022 20:56:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": -1,\n    \"errorMessage\": \"This record could not be deleted because it does not exist.\"\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "Get by id article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/article/4",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"article",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get by id article - ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/article/4",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"article",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "509"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1fd-2z1eaaahNGrLAslzqGDAgz6rngY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 20:30:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"photos\": [\n        {\n            \"photoId\": 3,\n            \"imagePath\": \"static/uploads/2022/06/5e695277-4030-450d-8281-bde7543180a2-phones-switch-apps.jpg\"\n        }\n    ],\n    \"articleId\": 4,\n    \"categoryId\": 1,\n    \"name\": \"artikal 2022\",\n    \"description\": \"opis ertikla 2022\",\n    \"os\": \"dodat novi android\",\n    \"resolution\": \"2400x1800\",\n    \"procesor\": \"8 octa core\",\n    \"bluetooth\": \"v5.1\",\n    \"wifi\": \"wi-fi 252\",\n    \"network\": \"GSM 850/900/1800/1900 MHz\",\n    \"price\": \"4.40\",\n    \"createdAt\": \"2022-06-22T11:39:27.000Z\",\n    \"category\": {\n        \"categoryId\": 1,\n        \"name\": \"izmenjenA KATEGORIJA\",\n        \"imagePath\": \"nestotamo/ePoskat2.png\"\n    }\n}"
+						},
+						{
+							"name": "Get by id article - Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/article/8",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"article",
+										"8"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 20:57:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Not Found"
+						}
+					]
+				},
+				{
+					"name": "Add new article",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "data",
+									"value": "{\n   \"categoryId\":1,\n   \"name\":\"novi samsung\",\n   \"description\":\"opis artikla 2022\",\n   \"os\":\" android\",\n   \"ramMemory\":\"6gb\",\n   \"internalMemory\":\"32gb\",\n   \"resolution\":\"2400x1800\",\n   \"displaySize\":\"5.99\",\n   \"mainCamera\":\"58mp -f 2.2 + 12mp - f 2.4 + 5mp - f 2.3\",\n   \"selfieCamera\":\"18mp - f 2.2\",\n   \"procesor\":\"8 octa core\",\n   \"bluetooth\":\"v5.1\",\n   \"wifi\":\"wi-fi 252\",\n   \"network\":\"GSM 850/900/1800/1900 MHz\",\n   \"price\":182.24\n}",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/anazr/Desktop/Praktikum - Sistemi e-poslovanja/moji projekti/phones-switch-apps.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/article",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"article"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/article",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"article"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "Get all admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/administrator",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"administrator"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all admin - ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/administrator",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1205"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b5-k/v5EpChc08RyiWL7BuKKQK4Mz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:24:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"administratorId\": 1,\n        \"username\": \"adminana\",\n        \"passwordHash\": \"$2b$11$N3O18SYS2f9.SoEc9KcDNurZv6A8qB2pO/5vAChz0qIk8MPTdrps2\",\n        \"isActive\": true\n    },\n    {\n        \"administratorId\": 2,\n        \"username\": \"admin 1\",\n        \"passwordHash\": \"2222\",\n        \"isActive\": true\n    },\n    {\n        \"administratorId\": 4,\n        \"username\": \"admin 2\",\n        \"passwordHash\": \"$2b$11$NPTSEqyL2w3RCleWg3XquOiCgm/fH1PnWvLeByOe7jWRO5PcM0226\",\n        \"isActive\": false\n    },\n    {\n        \"administratorId\": 6,\n        \"username\": \"admin 12345\",\n        \"passwordHash\": \"$2b$11$8lQDNfRZLje76JMOQGA8H.BFQNShQwApUSqDcXTxKk/oPUqP9fGzS\",\n        \"isActive\": true\n    },\n    {\n        \"administratorId\": 7,\n        \"username\": \"admin 1234\",\n        \"passwordHash\": \"$2b$11$5GRlw5w4rNZbxnIG/BXSVO2mYdmzLJBGlVQf0JzIg6CjwE1P1ijhS\",\n        \"isActive\": true\n    },\n    {\n        \"administratorId\": 8,\n        \"username\": \"admin 11111\",\n        \"passwordHash\": \"$2b$11$TJFYTv3h6DC15xUGR9jWguiUQtvmd/B741tp0CQ/BtxtJKwuc2Mj2\",\n        \"isActive\": true\n    },\n    {\n        \"administratorId\": 9,\n        \"username\": \"admin 22222\",\n        \"passwordHash\": \"$2b$11$iUM/xXElwD4/Sw9taPaFT.LtjVCsj79U5ebM3KgLdCxs4F6RIK1Ee\",\n        \"isActive\": false\n    },\n    {\n        \"administratorId\": 10,\n        \"username\": \"admin 333\",\n        \"passwordHash\": \"$2b$11$f6k0ZdOI8NwoNAO0pj/NnuYyC54JZUZyy./Nky6RnLfzipv6vwGby\",\n        \"isActive\": true\n    },\n    {\n        \"administratorId\": 12,\n        \"username\": \"admin1234567\",\n        \"passwordHash\": \"$2b$11$04NtsbMUl37K4w76MF/irek7muPPGlEH7znpVqqvDF7r/bMB5oB5S\",\n        \"isActive\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete admin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/administrator/5",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"administrator",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete admin - not found id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/administrator/5",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5d-rEcAeLHHZzwz3xXTABzbxX4ny9I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 20:16:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": -1,\n    \"errorMessage\": \"This record could not be deleted because it does not exist.\"\n}"
+						},
+						{
+							"name": "Delete admin - The ID value cannot be smaller than 1",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/administrator/0",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"0"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-jYsmdHH2/dXZ0Oml0AEaOYe3OJE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 09:27:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "The ID value cannot be smaller than 1"
+						},
+						{
+							"name": "Delete admin - ok",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/administrator/12",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-3bGvgyUDYS+l5eYoH2RPZglCspw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:25:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": 0,\n    \"errorMessage\": \"One record deleted. \"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add new admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"anaadmin1\",\r\n    \"password\": \"anaadmin1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/administrator",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"administrator"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add new admin - ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"anaadmin1\",\r\n    \"password\": \"anaadmin1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8b-WTqbG5nS5/UcaF96fbCNbxLXNBU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:35:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 13,\n    \"username\": \"anaadmin1\",\n    \"passwordHash\": \"$2b$11$HskknI0J7YzD.u5u60l90ep8TbMA6KOR0nCnXNWoLBvn8VmSdzO5u\",\n    \"isActive\": true\n}"
+						},
+						{
+							"name": "Add new admin - must NOT have fewer than 5 characters",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"ad\",\r\n    \"password\": \"admin333\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "170"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"aa-U2SI1vXX59wPKzoDIaDmKjzlRF0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:36:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"instancePath\": \"/username\",\n        \"schemaPath\": \"#/properties/username/minLength\",\n        \"keyword\": \"minLength\",\n        \"params\": {\n            \"limit\": 5\n        },\n        \"message\": \"must NOT have fewer than 5 characters\"\n    }\n]"
+						},
+						{
+							"name": "Add new admin - Duplicate entry 'anaadmin1' for key 'administrator.uq_administrator_username'",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"anaadmin1\",\r\n    \"password\": \"anaadmin1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "113"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"71-DN4jNP7g5LjrzNjVVD+djbNVQXc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:37:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": 1062,\n    \"errorMessage\": \"Duplicate entry 'anaadmin1' for key 'administrator.uq_administrator_username'\"\n}"
+						},
+						{
+							"name": "Add new admin -must have required property 'password'",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"anaadmin1\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f-ATKTkHI9bZSEn1IkQCuy8Hb8b3o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:39:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"instancePath\": \"\",\n        \"schemaPath\": \"#/required\",\n        \"keyword\": \"required\",\n        \"params\": {\n            \"missingProperty\": \"password\"\n        },\n        \"message\": \"must have required property 'password'\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get by id admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/administrator/1",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"administrator",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get by id admin - not found id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/administrator/88",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"88"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 08:59:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Not Found"
+						},
+						{
+							"name": "Get by id admin - ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/administrator/1",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"89-x8zWptT9T1Iqo153ASa8J4XtYj8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:28:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 1,\n    \"username\": \"adminana\",\n    \"passwordHash\": \"$2b$11$N3O18SYS2f9.SoEc9KcDNurZv6A8qB2pO/5vAChz0qIk8MPTdrps2\",\n    \"isActive\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit admin pass",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"password\": \"admin2novipass\",\r\n    \"isActive\" : false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/administrator/4",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"administrator",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit admin pass - not found id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"password\": \"admin2novi\",\r\n    \"isActive\" : false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator/88",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"88"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 09:19:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Not Found"
+						},
+						{
+							"name": "Edit admin pass - must NOT have fewer than 6 characters",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"password\": \"admi\",\r\n    \"isActive\" : false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator/4",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"4"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "170"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"aa-3q2UZWHv7OPPGvxJASoDVb2XgKs\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 09:21:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"instancePath\": \"/password\",\n        \"schemaPath\": \"#/properties/password/minLength\",\n        \"keyword\": \"minLength\",\n        \"params\": {\n            \"limit\": 6\n        },\n        \"message\": \"must NOT have fewer than 6 characters\"\n    }\n]"
+						},
+						{
+							"name": "Edit admin pass - must have required property 'isActive'",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"password\": \"admin2novi\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator/4",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"4"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f-QHRkMNWFjUVUcALsJmwNy8mfGHQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 09:22:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"instancePath\": \"\",\n        \"schemaPath\": \"#/required\",\n        \"keyword\": \"required\",\n        \"params\": {\n            \"missingProperty\": \"isActive\"\n        },\n        \"message\": \"must have required property 'isActive'\"\n    }\n]"
+						},
+						{
+							"name": "Edit admin pass - ok",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"password\": \"admin2novipass\",\r\n    \"isActive\" : false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/administrator/4",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"administrator",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"89-4Jnvxe90Iy+uMx+wNBGyTKsL5/g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:32:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 4,\n    \"username\": \"admin 2\",\n    \"passwordHash\": \"$2b$11$PJvRe7DCjaa8H7n0kpLwTuLFxcB7hMqV2TkyOocsgksMwrUQL7Vrm\",\n    \"isActive\": false\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"adminana\",\r\n    \"password\": \"adminana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/auth/administrator/login",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"auth",
+								"administrator",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login admin - ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"adminana\",\r\n    \"password\": \"adminana\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/auth/administrator/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"auth",
+										"administrator",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1080"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"438-oRpG2PVWCq0L77AGFUa4U9bXIO8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 14:28:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"authToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlkZW50aXR5IjoiYWRtaW4gMzMzIiwicm9sZSI6ImFkbWluaXN0cmF0b3IiLCJpYXQiOjE2NTUzODk2ODMsImV4cCI6MTY1NTk5NDQ4MywiaXNzIjoibG9jYWxob3N0In0.WQyLVNYRhmBYm7rBEfWWBITdrvN5fNCq4EQgOWUqZBkK3FLNnuzMcGBJIvcvx8K5VxUbVkvqpMWX6FAHwDea07hKEI8EiQeXx_QjWsuwsKzmaIAzKM61hOG1CCXjId4FajMZofLVG-Ij7sTH_zhF9GQkzIp4-wgOo2ARMovDKo4Svb7ydRYvq5q7GPT5c_9bZWbtpbkqFFbpkjhEz4pjf-MxtspZadGeUTd0S4LEpT2BdOUoGzQAEDMQ5kH6zzAaEJuQ4dWO4tnZA8VlDWFiRdASc_WgG4Bt7CNRA0-8k8XvhqRmnOnzqc6GyTPTZ3BnRknpnLFXrudxGhBFWQerlg\",\n    \"refreshToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlkZW50aXR5IjoiYWRtaW4gMzMzIiwicm9sZSI6ImFkbWluaXN0cmF0b3IiLCJpYXQiOjE2NTUzODk2ODMsImV4cCI6MTY1NTk5NDQ4MywiaXNzIjoibG9jYWxob3N0In0.jvabTc0zW8xFO7_2xdHpB5FawaDDdhT8p-9m-Xy_KyU99ryalLG-QGhxT_frRnVrJvQ_fC2ngd-431bqFUzk85pREQojWLHGBHZm3ssoKDsTf9NutmcdtukPngorIZiV1Awpoy44rUGjomwLeqNo3fVjndKdH0elccCJLsfvDY6BtNRMejhnu-YkIP8xbuLw4Crd6xezd0cNsLRxaY3PivRHL8PTOJwtjUJDzA_DJjxUajhlNRp5wbQ4lv29oXcFaMBLm8A_gdTq2xlbR6-4F7xveqFi6QvvOpIk0QcUn2JYa6zZ1yMItPxf-3A6Rbkmo4UxkI_gyZL1vpapmtEROw\"\n}"
+						},
+						{
+							"name": "Login admin - Administrator account inactive.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"admin 22222\",\r\n    \"password\": \"admin22222\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/auth/administrator/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"auth",
+										"administrator",
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-gGX/kiT3mamimbuyelW2JDm0OL8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jun 2022 14:30:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Administrator account inactive."
+						},
+						{
+							"name": "Login admin  - Invalid administrator password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"adminana\",\r\n    \"password\": \"adminanaaaa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/auth/administrator/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"auth",
+										"administrator",
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-AEZBxzwS0Pv3dycnw4UytHxCQYQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Jul 2022 21:40:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Invalid administrator password"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWRlbnRpdHkiOiJhZG1pbmFuYSIsInJvbGUiOiJhZG1pbmlzdHJhdG9yIiwiaWF0IjoxNjU3MjMyODAxLCJleHAiOjE2NTc4Mzc2MDEsImlzcyI6ImxvY2FsaG9zdCJ9.VOcfsD-73p09WIvM4ZqsLjoLq0l0HyDj2sBazLbXxIGiUXD7OkSimJCUwrarFKFk-eF3taeQ8cItBr4pEWvmF_k19FGOaNoYXznp4VZj-k3j2cV99KM1as346X5VFL2zTvGeWE40y23gkHbrMEv_vIoucmlZbcsJRucR0GHAbmP-KS5oiGQuFFKYqwRz6u_93Jv0Vaay_EZXIkKbFOubFbHAIuGVjyhImwrXuL2AGpNmg9wpcjjfexSHnNcV38R_f2bjhNgNdxieIjO4sfVxBoRqJzFFB1V7K3fdyxaBB_tTnSsFaUn7WlOpPrMmlMabQtCScuIRMIcIIFlfAVE01Q",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://localhost:40080"
+		}
+	]
+}
