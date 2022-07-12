@@ -13,5 +13,6 @@ Ovde se nalazi projekat za predmet Praktikum - Sistemi ePoslovanja
 
 ## kako se pokrece aplikacija
 
-1. Podigne se baza podata iz SQL dump datoteke sa linka [02-resources/appmobtel.sql](./02-resources/appmobtel.sql)
+1. Podigne se baza podata iz SQL dump datoteke sa linka [02-resources/mobilniKatalog.sql](./02-resources/mobilniKatalog.sql)
 2. Pokrene se aplikacija...
+3. U datoteci na linku [02-resources/eKatalogMobilnih.postman_collection.sql](./02-resources/eKatalogMobilnih.postman_collection.sql) se nalazi kolekcija Postman poziva
